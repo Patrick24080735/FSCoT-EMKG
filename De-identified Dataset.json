@@ -1,0 +1,112 @@
+Appendix: Examples of Extracted Triples
+Below are representative examples of triples extracted by our proposed method. For each example, the original Chinese task and its English translation are provided.
+1. Relation: power_system_component_failure
+(1)Input (Original): "电池电量耗尽导致引擎无法启动。" 
+Output (Original): (电池电量耗尽, 动力系统部件故障, 引擎无法启动)
+Input (Translation): "Battery power off leads to engine failure." 
+Output (Translation): (Battery power off, power_system_component_failure, engine failure)
+
+(2)Input (Original): "冷却液不足导致热管理系统报警。" 
+Output (Original): (冷却液不足, 动力系统部件故障, 热管理系统报警)
+Input (Translation): "Insufficient coolant triggers an alarm in the thermal management system." 
+Output (Translation): (Insufficient coolant, power_system_component_failure, thermal management system alarm)
+
+(3)Input (Original): "驱动电机控制器温度传感器故障，引发电机过热警告。" 
+Output (Original): (驱动电机控制器温度传感器故障, 动力系统部件故障, 电机过热警告)
+Input (Translation): "A fault in the drive motor controller's temperature sensor triggered a motor overheat warning." 
+Output (Translation): (Drive motor controller temperature sensor fault, power_system_component_failure, motor overheat warning)
+
+(4)Input (Original): "车载充电机内部模块损坏，无法进行交流充电。" 
+Output (Original): (模块损坏, 动力系统部件故障, 交流充电失败)
+Input (Translation): "Internal module damage in the on-board charger prevents AC charging." 
+Output (Translation): (Module damage, power_system_component_failure, AC charging failure)
+
+2. Relation: chassis_system_component_failure
+(1)Input (Original): "轮胎压力不足是造成严重轮胎磨损的原因。" 
+Output (Original): (轮胎压力不足, 底盘系统部件故障, 严重轮胎磨损)
+Input (Translation): "The severe tire wear is due to insufficient tire pressure." 
+Output (Translation): (Insufficient tire pressure, chassis_system_component_failure, severe tire wear)
+
+(2)Input (Original): "悬挂系统空气弹簧漏气，导致车身高度异常。" 
+Output (Original): (悬挂系统空气弹簧漏气, 底盘系统部件故障, 车身高度异常)
+Input (Translation): "A leak in the suspension system's air spring caused abnormal vehicle body height."
+Output (Translation): (Suspension air spring leak, chassis_system_component_failure, abnormal vehicle body height)
+
+3. Relation: electrical_system_component_failure
+(1)Input (Original): "12V蓄电池严重亏电，导致车内部分低压电器无法使用。" 
+Output (Original): (12V蓄电池亏电, 电气系统部件故障, 低压电器失效)
+Input (Translation): "Severe depletion of the 12V battery caused some low-voltage appliances in the car to fail." 
+Output (Translation): (12V battery depletion, electrical_system_component_failure, low-voltage appliance failure)
+
+(2)Input (Original): "高压配电盒（PDU）接触器粘连，高压系统无法正常上电。" 
+Output (Original): (PDU接触器粘连, 电气系统部件故障, 高压系统无法上电)
+Input (Translation): "A stuck contactor in the high-voltage Power Distribution Unit (PDU) prevented the high-voltage system from powering on." 
+Output (Translation): (PDU contactor adhesion, electrical_system_component_failure, HV system power-on failure)
+
+4. Relation: electronic_system_component_failure
+(1)Input (Original): "中央控制屏幕出现黑屏，无法进行导航和娱乐操作。" 
+Output (Original): (中央控制屏黑屏, 电子系统部件故障, 导航娱乐操作失败)
+Input (Translation): "The central control screen went black, making navigation and entertainment operations unavailable." 
+Output (Translation): (Central control screen blackout, electronic_system_component_failure, navigation/entertainment operation failure)
+
+(2)Input (Original): "倒车雷达探头有损坏，导致无法探测后方障碍物。" 
+Output (Original): (倒车雷达探头损坏, 电子系统部件故障, 障碍物探测失效)
+Input (Translation): "The reverse radar sensor is damaged, leading to a failure to detect rear obstacles." 
+Output (Translation): (Sensor damage, electronic_system_component_failure, obstacle detection failure)
+
+5. Relation: body_system_component_failure
+Input (Original): "驾驶员侧车窗升降器发生卡滞，车窗无法正常升降。" 
+Output (Original): (车窗升降器卡滞, 车身系统部件故障, 车窗升降异常)
+Input (Translation): "The driver-side window regulator is stuck, preventing the window from lifting properly." 
+Output (Translation): (Window regulator stuck, body_system_component_failure, abnormal window lifting)
+
+6. Relation: power_failure
+Input (Original): "电池管理系统（BMS）检测到绝缘故障，主动切断了高压电输出。"
+Output (Original): (BMS绝缘故障, 动力性能故障, 高压电输出切断)
+Input (Translation): "The Battery Management System (BMS) detected an insulation fault and actively cut off the high-voltage output." 
+Output (Translation): (BMS insulation fault, power_failure, high-voltage output cutoff)
+
+7. Relation: handling_failure
+(1)Input (Original): "制动片磨损严重，直接影响了车辆的制动性能。" 
+Output (Original): (制动片磨损严重, 操控性能故障, 制动性能下降)
+Input (Translation): "Severe wear of the brake pads directly affected the vehicle's braking performance."
+Output (Translation): (Brake pad wear, handling_failure, braking performance degradation)
+
+(2)Input (Original): "电子助力转向系统（EPS）报故障码，导致方向盘转向沉重。" 
+Output (Original): (EPS报故障码, 操控性能故障, 转向沉重)
+Input (Translation): "The Electronic Power Steering (EPS) system reported a fault code, causing heavy steering." 
+Output (Translation): (EPS fault code, handling_failure, heavy steering)
+
+8. Relation: comfort_failure
+(1)Input (Original): "空调压缩机离合器不吸合，导致车内无法制冷。" 
+Output (Original): (离合器不吸合, 舒适性能故障, 车内无法制冷)
+Input (Translation): "The A/C compressor clutch is not engaging, leading to a failure to cool the cabin." 
+Output (Translation): (Compressor engaging failure, comfort_failure, cabin cooling failure)
+
+(2)Input (Original): "前排座椅的通风功能失效，影响了夏季的驾乘舒适度。" 
+Output (Original): (座椅通风功能失效, 舒适性能故障, 驾乘舒适度下降)
+Input (Translation): "The ventilation function of the front seats has failed, affecting ride comfort in summer." 
+Output (Translation): (Seat ventilation failure, comfort_failure, ride comfort degradation)
+
+9. Relation: safety_failure
+(1)Input (Original): "安全气囊控制器（ACU）内部故障，发生碰撞时气囊可能无法正常展开。" 
+Output (Original): (ACU内部故障, 安全性故障, 气囊无法正常展开)
+Input (Translation): "An internal fault in the Airbag Control Unit (ACU) may prevent airbags from deploying correctly in a collision." 
+Output (Translation): (ACU internal fault, safety_failure, airbag deployment failure)
+
+(2)Input (Original): "自动紧急制动（AEB）的摄像头被遮挡，该安全功能已禁用。" 
+Output (Original): (AEB摄像头被遮挡, 安全性故障, AEB功能禁用)
+Input (Translation): "The camera for the Autonomous Emergency Braking (AEB) system is obstructed; this safety feature is disabled." 
+Output (Translation): (AEB camera obstructed, safety_failure, AEB feature disabled)
+
+10. Relation: emission_failure
+Input (Original): "电池热管理系统冷却循环不畅，可能导致电池过热并释放有害气体。" 
+Output (Original): (冷却液循环不畅, 排放性能故障, 有害气体释放风险)
+Input (Translation): "Poor circulation in the battery thermal management system's cooling loop may cause battery overheating and hazardous gas release." 
+Output (Translation): (Poor cooling circulation, emission_failure, hazardous gas release risk)
+
+11. Relation: electrinic_failure
+Input (Original): "仪表盘通讯CAN模块失灵，车速和剩余里程等信息无法显示。" 
+Output (Original): (仪表盘通讯模块失灵, 电子性能故障, 车速里程信息无法显示)
+Input (Translation): "The instrument cluster's CAN communication module has failed; information such as vehicle speed and remaining range cannot be displayed." 
+Output (Translation): (Instrument cluster CAN module failure, electrinic_failure, speed and range display failure)

@@ -1,0 +1,43 @@
+System Role
+You are an expert in knowledge extraction for industrial equipment maintenance. Your task is to extract high-quality triples (head_entity, relation, tail_entity) from the provided O&M records.
+
+Relation Ontology
+Please select the most appropriate relation from the following predefined ontology:
+
+power_system_component_failure
+chassis_system_component_failure
+electrical_system_component_failure
+electronic_system_component_failure
+body_system_component_failure
+power_failure
+handling_failure
+comfort_failure
+safety_failure
+emission_failure
+electronic_failure
+
+Example 1
+Text: "Fault Report No. 198: The vehicle's cruise control system has failed."
+Triple: (Cruise Control System, handling_failure, failed)
+Example 2
+Text: "Fault Report No. 411: The right rear door cannot be opened from the outside, and the gap around the right rear door exterior handle is abnormally large."
+Triple: (Right Rear Door, body_system_component_failure, cannot be opened)
+Example 3
+Text: "Fault Report No. 498: A Meiri-brand vehicle exhibits a strong gasoline odor inside the cabin and increased fuel consumption. Root cause: poor sealing of the fuel tank check valve or failure of the charcoal canister."
+Triple: (Fuel Tank Check Valve, emission_failure, poor sealing or charcoal canister failure)
+Example 4
+Text: "Root cause analysis: Possible issues include carburetor or contact point failure, or retarded ignition timing."
+Triples: (Carburetor, power_system_component_failure, failure); (Contact Points, power_system_component_failure, failure); (Ignition Timing, power_failure, retarded)
+Example 5
+Text: "3. Exhaust and crankcase ventilation lines are excessively dirty."
+Triple: (Exhaust and Crankcase Ventilation Lines, emission_failure, excessively dirty)
+
+Chain of Thought (Reasoning Steps)
+Follow these steps to ensure accuracy:
+NER: Identify all key technical entities (components, fault phenomena, etc.) in the text.
+Relation Matching: Evaluate the semantic relationship between entities based on the ontology.
+Triple Construction: Formulate triples as (subject, relation, object).
+Self-Correction: Verify the triple against domain logic. If the logical score is below 0.8, re-evaluate and refine the triple.
+
+Output Format
+Triple: (head_entity, relation, tail_entity)
